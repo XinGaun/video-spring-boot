@@ -1,0 +1,35 @@
+#数据库配置
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://www.niceyuwen.com:3306/test?characterEncoding=UTF-8
+    username: root
+    password: f502e132e772c9434a550bc86f7af2d7
+
+#配置存储图片路径
+#imgs: E://logo
+#imgs: /home/guanxin/guanxin/img
+#imgs: /var/lib/hangran_o2o/upload
+
+#监听本地
+#server:
+#  address: 127.0.0.1
+
+#Mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: qg.fangrui.boot.model
+
+#spring-boot关闭服务配置
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
+
+#配置SSL证书
+#server:
+# ssl:
+#  key-store: classpath:feiao.p12
+#  key-store-password: cs@123456
+#  keyStoreType: PKCS12
+#  keyAlias: tomcat
